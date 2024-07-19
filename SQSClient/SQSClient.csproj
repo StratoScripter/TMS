@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{713D49C1-4407-4CDB-8E1E-8EE0E4C68316}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SQSClient</RootNamespace>
+    <AssemblyName>SQSClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SQSClient.ico</ApplicationIcon>
+    <StartupObject>SQSClient.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assistant">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\Assistant.dll</HintPath>
+    </Reference>
+    <Reference Include="AutocompleteMenu">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\AutocompleteMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Base">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\Base.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigTool">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\ConfigTool.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL.Access">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\DAL.Access.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL.MySQL">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\DAL.MySQL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL.SQLServer">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\DAL.SQLServer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentCamera">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\DocumentCamera.dll</HintPath>
+    </Reference>
+    <Reference Include="ICHandle">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\ICHandle.dll</HintPath>
+    </Reference>
+    <Reference Include="IDCardRead">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\IDCardRead.dll</HintPath>
+    </Reference>
+    <Reference Include="InterHandle">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\InterHandle.dll</HintPath>
+    </Reference>
+    <Reference Include="LTDesign">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\LTDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Model">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>C:\Users\mhass\Downloads\SQSClient\SQSClient\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssistTool\TicketProcess.cs" />
+    <Compile Include="ATicketControl.cs" />
+    <Compile Include="BardCodeHooK.cs" />
+    <Compile Include="BaseDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseDialogForm.Designer.cs">
+      <DependentUpon>BaseDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchLabHelper.cs" />
+    <Compile Include="ChangeShowMod.cs" />
+    <Compile Include="ColWith.cs" />
+    <Compile Include="DanHaoHelper.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdvancedQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdvancedQuery.Designer.cs">
+      <DependentUpon>frmAdvancedQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlarmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlarmQuery.Designer.cs">
+      <DependentUpon>frmAlarmQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllowCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllowCondition.Designer.cs">
+      <DependentUpon>frmAllowCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssistAccountSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssistAccountSure.Designer.cs">
+      <DependentUpon>frmAssistAccountSure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckIn.Designer.cs">
+      <DependentUpon>frmCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClient.Designer.cs">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientEdit.Designer.cs">
+      <DependentUpon>frmClientEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContract.Designer.cs">
+      <DependentUpon>frmContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContractEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContractEdit.Designer.cs">
+      <DependentUpon>frmContractEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditConfirm.Designer.cs">
+      <DependentUpon>frmCreditConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCurrStock.Designer.cs">
+      <DependentUpon>frmCurrStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBConfig.Designer.cs">
+      <DependentUpon>frmDBConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevice.Designer.cs">
+      <DependentUpon>frmDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeviceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeviceEdit.Designer.cs">
+      <DependentUpon>frmDeviceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevItems.Designer.cs">
+      <DependentUpon>frmDevItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDictionaryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDictionaryEdit.Designer.cs">
+      <DependentUpon>frmDictionaryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocCamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocCamView.Designer.cs">
+      <DependentUpon>frmDocCamView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDynamicButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDynamicButton.Designer.cs">
+      <DependentUpon>frmDynamicButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDynamicButtonEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDynamicButtonEdit.Designer.cs">
+      <DependentUpon>frmDynamicButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEquipClass.Designer.cs">
+      <DependentUpon>frmEquipClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipClassEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEquipClassEdit.Designer.cs">
+      <DependentUpon>frmEquipClassEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupEdit.Designer.cs">
+      <DependentUpon>frmGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmICCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmICCard.Designer.cs">
+      <DependentUpon>frmICCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmICCardEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmICCardEdit.Designer.cs">
+      <DependentUpon>frmICCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmICCardWR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmICCardWR.Designer.cs">
+      <DependentUpon>frmICCardWR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvModelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvModelEdit.Designer.cs">
+      <DependentUpon>frmInvModelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvModelN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvModelN.Designer.cs">
+      <DependentUpon>frmInvModelN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvStep.Designer.cs">
+      <DependentUpon>frmInvStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvStepEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvStepEdit.Designer.cs">
+      <DependentUpon>frmInvStepEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemChoose.Designer.cs">
+      <DependentUpon>frmItemChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemDevEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemDevEdit.Designer.cs">
+      <DependentUpon>frmItemDevEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyCode.Designer.cs">
+      <DependentUpon>frmKeyCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyCodeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyCodeEdit.Designer.cs">
+      <DependentUpon>frmKeyCodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLab.Designer.cs">
+      <DependentUpon>frmLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabEdit.Designer.cs">
+      <DependentUpon>frmLabEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabTicketEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabTicketEdit.Designer.cs">
+      <DependentUpon>frmLabTicketEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogQuery.Designer.cs">
+      <DependentUpon>frmLogQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultiMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultiMonitor.Designer.cs">
+      <DependentUpon>frmMultiMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperator.Designer.cs">
+      <DependentUpon>frmOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperatorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperatorEdit.Designer.cs">
+      <DependentUpon>frmOperatorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrgChart.Designer.cs">
+      <DependentUpon>frmOrgChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasswordSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasswordSure.Designer.cs">
+      <DependentUpon>frmPasswordSure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCEdit.Designer.cs">
+      <DependentUpon>frmPCEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdaSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdaSetting.Designer.cs">
+      <DependentUpon>frmPdaSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPdaSettingEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPdaSettingEdit.Designer.cs">
+      <DependentUpon>frmPdaSettingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermission.Designer.cs">
+      <DependentUpon>frmPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermissionChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermissionChoose.Designer.cs">
+      <DependentUpon>frmPermissionChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhotoAround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhotoAround.Designer.cs">
+      <DependentUpon>frmPhotoAround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricePolicy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricePolicy.Designer.cs">
+      <DependentUpon>frmPricePolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricePolicyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricePolicyEdit.Designer.cs">
+      <DependentUpon>frmPricePolicyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintChoise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintChoise.Designer.cs">
+      <DependentUpon>frmPrintChoise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintView.Designer.cs">
+      <DependentUpon>frmPrintView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductEdit.Designer.cs">
+      <DependentUpon>frmProductEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductEditShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductEditShow.Designer.cs">
+      <DependentUpon>frmProductEditShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductExt.Designer.cs">
+      <DependentUpon>frmProductExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductExtShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductExtShow.Designer.cs">
+      <DependentUpon>frmProductExtShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductFree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductFree.Designer.cs">
+      <DependentUpon>frmProductFree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProUnitCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProUnitCheck.Designer.cs">
+      <DependentUpon>frmProUnitCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQRCodeShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQRCodeShow.Designer.cs">
+      <DependentUpon>frmQRCodeShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQualityBuckle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQualityBuckle.Designer.cs">
+      <DependentUpon>frmQualityBuckle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRdRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRdRecord.Designer.cs">
+      <DependentUpon>frmRdRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRdRecordEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRdRecordEdit.Designer.cs">
+      <DependentUpon>frmRdRecordEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRdRecordsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRdRecordsEdit.Designer.cs">
+      <DependentUpon>frmRdRecordsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRdRecordTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRdRecordTicket.Designer.cs">
+      <DependentUpon>frmRdRecordTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReviseAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReviseAccount.Designer.cs">
+      <DependentUpon>frmReviseAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReviseBuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReviseBuDan.Designer.cs">
+      <DependentUpon>frmReviseBuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScaleNDBConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScaleNDBConfig.Designer.cs">
+      <DependentUpon>frmScaleNDBConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchVehicle.Designer.cs">
+      <DependentUpon>frmSearchVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSerialEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSerialEdit.Designer.cs">
+      <DependentUpon>frmSerialEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServer.Designer.cs">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettlepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettlepart.Designer.cs">
+      <DependentUpon>frmSettlepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettlepartEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettlepartEdit.Designer.cs">
+      <DependentUpon>frmSettlepartEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecialClassEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecialClassEdit.Designer.cs">
+      <DependentUpon>frmSpecialClassEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecialStepClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecialStepClass.Designer.cs">
+      <DependentUpon>frmSpecialStepClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSrmEquips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSrmEquips.Designer.cs">
+      <DependentUpon>frmSrmEquips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSrmEquipsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSrmEquipsEdit.Designer.cs">
+      <DependentUpon>frmSrmEquipsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSrmFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSrmFactory.Designer.cs">
+      <DependentUpon>frmSrmFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSrmFactoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSrmFactoryEdit.Designer.cs">
+      <DependentUpon>frmSrmFactoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatisticsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatisticsReport.Designer.cs">
+      <DependentUpon>frmStatisticsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStep.Designer.cs">
+      <DependentUpon>frmStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStepEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStepEdit.Designer.cs">
+      <DependentUpon>frmStepEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStepUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStepUnit.Designer.cs">
+      <DependentUpon>frmStepUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStepUnitEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStepUnitEdit.Designer.cs">
+      <DependentUpon>frmStepUnitEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemPara.Designer.cs">
+      <DependentUpon>frmSystemPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemParaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemParaEdit.Designer.cs">
+      <DependentUpon>frmSystemParaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTakeTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTakeTicket.Designer.cs">
+      <DependentUpon>frmTakeTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTank.Designer.cs">
+      <DependentUpon>frmTank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTankEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTankEdit.Designer.cs">
+      <DependentUpon>frmTankEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicket.Designer.cs">
+      <DependentUpon>frmTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketBatchLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketBatchLab.Designer.cs">
+      <DependentUpon>frmTicketBatchLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketBatchLabEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketBatchLabEdit.Designer.cs">
+      <DependentUpon>frmTicketBatchLabEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketBatchShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketBatchShow.Designer.cs">
+      <DependentUpon>frmTicketBatchShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketBatchSubHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketBatchSubHouse.Designer.cs">
+      <DependentUpon>frmTicketBatchSubHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketBatchSubQuality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketBatchSubQuality.Designer.cs">
+      <DependentUpon>frmTicketBatchSubQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketEdit.Designer.cs">
+      <DependentUpon>frmTicketEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketMergeWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketMergeWeight.Designer.cs">
+      <DependentUpon>frmTicketMergeWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketNFastAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketNFastAdd.Designer.cs">
+      <DependentUpon>frmTicketNFastAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketReference.Designer.cs">
+      <DependentUpon>frmTicketReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketSummary.Designer.cs">
+      <DependentUpon>frmTicketSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruck.Designer.cs">
+      <DependentUpon>frmTruck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruckEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruckEdit.Designer.cs">
+      <DependentUpon>frmTruckEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruckTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruckTypeEdit.Designer.cs">
+      <DependentUpon>frmTruckTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnionLabDealEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnionLabDealEdit.Designer.cs">
+      <DependentUpon>frmUnionLabDealEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnionlabEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnionlabEdit.Designer.cs">
+      <DependentUpon>frmUnionlabEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnionlabTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnionlabTicket.Designer.cs">
+      <DependentUpon>frmUnionlabTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnitCheck.Designer.cs">
+      <DependentUpon>frmUnitCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnitEdit.Designer.cs">
+      <DependentUpon>frmUnitEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnitGroupEdit.Designer.cs">
+      <DependentUpon>frmUnitGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnitProducts.Designer.cs">
+      <DependentUpon>frmUnitProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserEdit.Designer.cs">
+      <DependentUpon>frmUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeighbridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeighbridge.Designer.cs">
+      <DependentUpon>frmWeighbridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeighbridgeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeighbridgeEdit.Designer.cs">
+      <DependentUpon>frmWeighbridgeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeightDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeightDetails.Designer.cs">
+      <DependentUpon>frmWeightDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWordEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWordEdit.Designer.cs">
+      <DependentUpon>frmWordEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IManager.cs" />
+    <Compile Include="ItemHelpr.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="ModPriceValue.cs" />
+    <Compile Include="Monitor\frmLogDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitor\frmLogDetail.Designer.cs">
+      <DependentUpon>frmLogDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor\Pagination.cs" />
+    <Compile Include="Monitor\PagingEventArgs.cs" />
+    <Compile Include="MutexCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MutexCheck.Designer.cs">
+      <DependentUpon>MutexCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperateDelegate.cs" />
+    <Compile Include="PriceThresholdControl.cs" />
+    <Compile Include="Printer.cs" />
+    <Compile Include="ProductPart.cs" />
+    <Compile Include="ProFreeControl.cs" />
+    <Compile Include="ProFreeFieldControl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="PublicClass.cs" />
+    <Compile Include="QRCodeHelper.cs" />
+    <Compile Include="RTNExportHelper.cs" />
+    <Compile Include="RWFlag.cs" />
+    <Compile Include="SelfFroms.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TicketBatchControl.cs" />
+    <Compile Include="TicketHouseControl.cs" />
+    <Compile Include="TicketSubQualityControl.cs" />
+    <Compile Include="TSCPrintHelper.cs" />
+    <Compile Include="TSCPrintLib.cs" />
+    <Compile Include="UnitLabel.cs" />
+    <Compile Include="UnitProfile.cs" />
+    <Compile Include="ZebraHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ATicketControl.resources" />
+    <EmbeddedResource Include="BaseDialogForm.resources" />
+    <EmbeddedResource Include="frmAbout.resources" />
+    <EmbeddedResource Include="frmAdvancedQuery.resources" />
+    <EmbeddedResource Include="frmAlarmQuery.resources" />
+    <EmbeddedResource Include="frmAllowCondition.resources" />
+    <EmbeddedResource Include="frmAssistAccountSure.resources" />
+    <EmbeddedResource Include="frmCheckIn.resources" />
+    <EmbeddedResource Include="frmClient.resources" />
+    <EmbeddedResource Include="frmClientEdit.resources" />
+    <EmbeddedResource Include="frmContract.resources" />
+    <EmbeddedResource Include="frmContractEdit.resources" />
+    <EmbeddedResource Include="frmCreditConfirm.resources" />
+    <EmbeddedResource Include="frmCurrStock.resources" />
+    <EmbeddedResource Include="frmDBConfig.resources" />
+    <EmbeddedResource Include="frmDevice.resources" />
+    <EmbeddedResource Include="frmDeviceEdit.resources" />
+    <EmbeddedResource Include="frmDevItems.resources" />
+    <EmbeddedResource Include="frmDictionaryEdit.resources" />
+    <EmbeddedResource Include="frmDocCamView.resources" />
+    <EmbeddedResource Include="frmDynamicButton.resources" />
+    <EmbeddedResource Include="frmDynamicButtonEdit.resources" />
+    <EmbeddedResource Include="frmEquipClass.resources" />
+    <EmbeddedResource Include="frmEquipClassEdit.resources" />
+    <EmbeddedResource Include="frmGroupEdit.resources" />
+    <EmbeddedResource Include="frmICCard.resources" />
+    <EmbeddedResource Include="frmICCardEdit.resources" />
+    <EmbeddedResource Include="frmICCardWR.resources" />
+    <EmbeddedResource Include="frmInvModelEdit.resources" />
+    <EmbeddedResource Include="frmInvModelN.resources" />
+    <EmbeddedResource Include="frmInvStep.resources" />
+    <EmbeddedResource Include="frmInvStepEdit.resources" />
+    <EmbeddedResource Include="frmItemChoose.resources" />
+    <EmbeddedResource Include="frmItemDevEdit.resources" />
+    <EmbeddedResource Include="frmKeyCode.resources" />
+    <EmbeddedResource Include="frmKeyCodeEdit.resources" />
+    <EmbeddedResource Include="frmLab.resources" />
+    <EmbeddedResource Include="frmLabEdit.resources" />
+    <EmbeddedResource Include="frmLabTicketEdit.resources" />
+    <EmbeddedResource Include="frmLogin.resources" />
+    <EmbeddedResource Include="frmLogQuery.resources" />
+    <EmbeddedResource Include="frmMain.resources" />
+    <EmbeddedResource Include="frmMultiMonitor.resources" />
+    <EmbeddedResource Include="frmOperator.resources" />
+    <EmbeddedResource Include="frmOperatorEdit.resources" />
+    <EmbeddedResource Include="frmOrgChart.resources" />
+    <EmbeddedResource Include="frmPassword.resources" />
+    <EmbeddedResource Include="frmPasswordSure.resources" />
+    <EmbeddedResource Include="frmPCEdit.resources" />
+    <EmbeddedResource Include="frmPdaSetting.resources" />
+    <EmbeddedResource Include="frmPdaSettingEdit.resources" />
+    <EmbeddedResource Include="frmPermission.resources" />
+    <EmbeddedResource Include="frmPermissionChoose.resources" />
+    <EmbeddedResource Include="frmPhotoAround.resources" />
+    <EmbeddedResource Include="frmPricePolicy.resources" />
+    <EmbeddedResource Include="frmPricePolicyEdit.resources" />
+    <EmbeddedResource Include="frmPrintChoise.resources" />
+    <EmbeddedResource Include="frmPrintView.resources" />
+    <EmbeddedResource Include="frmProduct.resources" />
+    <EmbeddedResource Include="frmProductEdit.resources" />
+    <EmbeddedResource Include="frmProductEditShow.resources" />
+    <EmbeddedResource Include="frmProductExt.resources" />
+    <EmbeddedResource Include="frmProductExtShow.resources" />
+    <EmbeddedResource Include="frmProductFree.resources" />
+    <EmbeddedResource Include="frmProUnitCheck.resources" />
+    <EmbeddedResource Include="frmQRCodeShow.resources" />
+    <EmbeddedResource Include="frmQualityBuckle.resources" />
+    <EmbeddedResource Include="frmRdRecord.resources" />
+    <EmbeddedResource Include="frmRdRecordEdit.resources" />
+    <EmbeddedResource Include="frmRdRecordsEdit.resources" />
+    <EmbeddedResource Include="frmRdRecordTicket.resources" />
+    <EmbeddedResource Include="frmReport.resources" />
+    <EmbeddedResource Include="frmReviseAccount.resources" />
+    <EmbeddedResource Include="frmReviseBuDan.resources" />
+    <EmbeddedResource Include="frmScaleNDBConfig.resources" />
+    <EmbeddedResource Include="frmSearchVehicle.resources" />
+    <EmbeddedResource Include="frmSerialEdit.resources" />
+    <EmbeddedResource Include="frmServer.resources" />
+    <EmbeddedResource Include="frmSettlepart.resources" />
+    <EmbeddedResource Include="frmSettlepartEdit.resources" />
+    <EmbeddedResource Include="frmSpecialClassEdit.resources" />
+    <EmbeddedResource Include="frmSpecialStepClass.resources" />
+    <EmbeddedResource Include="frmSrmEquips.resources" />
+    <EmbeddedResource Include="frmSrmEquipsEdit.resources" />
+    <EmbeddedResource Include="frmSrmFactory.resources" />
+    <EmbeddedResource Include="frmSrmFactoryEdit.resources" />
+    <EmbeddedResource Include="frmStatisticsReport.resources" />
+    <EmbeddedResource Include="frmStep.resources" />
+    <EmbeddedResource Include="frmStepEdit.resources" />
+    <EmbeddedResource Include="frmStepUnit.resources" />
+    <EmbeddedResource Include="frmStepUnitEdit.resources" />
+    <EmbeddedResource Include="frmSystemPara.resources" />
+    <EmbeddedResource Include="frmSystemParaEdit.resources" />
+    <EmbeddedResource Include="frmTakeTicket.resources" />
+    <EmbeddedResource Include="frmTank.resources" />
+    <EmbeddedResource Include="frmTankEdit.resources" />
+    <EmbeddedResource Include="frmTicket.resources" />
+    <EmbeddedResource Include="frmTicketBatchLab.resources" />
+    <EmbeddedResource Include="frmTicketBatchLabEdit.resources" />
+    <EmbeddedResource Include="frmTicketBatchShow.resources" />
+    <EmbeddedResource Include="frmTicketBatchSubHouse.resources" />
+    <EmbeddedResource Include="frmTicketBatchSubQuality.resources" />
+    <EmbeddedResource Include="frmTicketEdit.resources" />
+    <EmbeddedResource Include="frmTicketMergeWeight.resources" />
+    <EmbeddedResource Include="frmTicketNFastAdd.resources" />
+    <EmbeddedResource Include="frmTicketReference.resources" />
+    <EmbeddedResource Include="frmTicketSummary.resources" />
+    <EmbeddedResource Include="frmTruck.resources" />
+    <EmbeddedResource Include="frmTruckEdit.resources" />
+    <EmbeddedResource Include="frmTruckTypeEdit.resources" />
+    <EmbeddedResource Include="frmUnionLabDealEdit.resources" />
+    <EmbeddedResource Include="frmUnionlabEdit.resources" />
+    <EmbeddedResource Include="frmUnionlabTicket.resources" />
+    <EmbeddedResource Include="frmUnit.resources" />
+    <EmbeddedResource Include="frmUnitCheck.resources" />
+    <EmbeddedResource Include="frmUnitEdit.resources" />
+    <EmbeddedResource Include="frmUnitGroupEdit.resources" />
+    <EmbeddedResource Include="frmUnitProducts.resources" />
+    <EmbeddedResource Include="frmUserEdit.resources" />
+    <EmbeddedResource Include="frmWeighbridge.resources" />
+    <EmbeddedResource Include="frmWeighbridgeEdit.resources" />
+    <EmbeddedResource Include="frmWeightDetails.resources" />
+    <EmbeddedResource Include="frmWordEdit.resources" />
+    <EmbeddedResource Include="Monitor\frmLogDetail.resources" />
+    <EmbeddedResource Include="Monitor\Pagination.resources" />
+    <EmbeddedResource Include="MutexCheck.resources" />
+    <EmbeddedResource Include="PriceThresholdControl.resources" />
+    <EmbeddedResource Include="ProductPart.resources" />
+    <EmbeddedResource Include="ProFreeControl.resources" />
+    <EmbeddedResource Include="ProFreeFieldControl.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="TicketBatchControl.resources" />
+    <EmbeddedResource Include="TicketHouseControl.resources" />
+    <EmbeddedResource Include="TicketSubQualityControl.resources" />
+    <EmbeddedResource Include="UnitLabel.resources" />
+    <EmbeddedResource Include="UnitProfile.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

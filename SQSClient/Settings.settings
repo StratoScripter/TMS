@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile CurrentProfile="(Default)" GeneratedClassNamespace="SQSClient" GeneratedClassName="Settings" xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MonitorIDs" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="PortName" Description="串口号" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM0</Value>
+    </Setting>
+    <Setting Name="BaudRate" Description="波特率" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">115200</Value>
+    </Setting>
+    <Setting Name="TimeOut" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="LoadPrinter" Description="装车打印机" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="UnloadPrinter" Description="卸车打印机" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="HisReportPrinter" Description="历史数据打印机" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="AccountRemindEnable" Description="结算提醒开关" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="AccountTimeOut" Description="结算提醒时间（分）" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="LocalTicketType" Description="记录模式" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ProductShowType" Description="物料显示类型" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BusinessControlType" Description="业务控制类型" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ShowTicketMaxCount" Description="订单最大显示记录数" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="BarcodePrintCount" Description="条码打印次数" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="LabStepControler" Description="质检流程管控" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LabPrintCode" Description="质检打印编码" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LAB</Value>
+    </Setting>
+    <Setting Name="IsLabSpeech" Description="质检报警声音" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="IsLabDynamicRefresh" Description="质检动态刷新" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="IsDefaultProductSch" Description="默认物料查询" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="IsDefaultLicenseSch" Description="默认车牌查询" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="JieSuanLiangDecimal" Description="结算量小数位数" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="CompanyGroup" Description="专属物料分组" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
